@@ -13,7 +13,7 @@ const tripSchema = new mongoose.Schema({
 });
 
 // Compile the schema into a model
-const Trip = mongoose.model("Trip", tripSchema);
+const Trip = mongoose.model("trips", tripSchema);
 
 // Export the model
 module.exports = Trip;
