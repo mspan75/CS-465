@@ -1,0 +1,13 @@
+<div class="trip-list">
+  <button (click)="addTrip()" class="btn btn-primary">Add Trip</button>
+</div>
+
+<h2>Trip Listings</h2>
+
+<div class="row">
+  @for (trip of trips(); track trip.code) {
+    <div class="col-md-4">
+      <app-trip-card [trip]="trip"></app-trip-card>
+    </div>
+  }
+</div>

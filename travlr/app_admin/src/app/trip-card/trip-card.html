@@ -1,0 +1,14 @@
+<div class="card">
+  <img class="card-img-top" src="assets/images/{{ trip.image }}" alt="{{ trip.name }}" />
+  <div class="card-body">
+    <h5 class="card-title">{{ trip.name }}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ trip.resort }}</li>
+    <li class="list-group-item">{{ trip.length }} only {{ trip.perPerson }} per person</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">View Details</a>
+    <button (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</button>
+  </div>
+</div>
