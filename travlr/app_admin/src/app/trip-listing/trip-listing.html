@@ -1,5 +1,7 @@
 <div class="trip-list">
-  <button (click)="addTrip()" class="btn btn-primary">Add Trip</button>
+  <div *ngIf="isLoggedIn()">
+    <button (click)="addTrip()" class="btn btn-primary">Add Trip</button>
+  </div>
 </div>
 
 <h2>Trip Listings</h2>

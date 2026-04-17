@@ -9,6 +9,8 @@
   </ul>
   <div class="card-body">
     <a href="#" class="card-link">View Details</a>
-    <button (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</button>
+    <div *ngIf="isLoggedIn()">
+      <button (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</button>
+    </div>
   </div>
 </div>
